@@ -1,20 +1,11 @@
 import "./HomePage.scss";
-import { useRef, useEffect } from "react";
-import homePageImg from "../../../public/images/homePageImg.jpg";
-import { Carousel, initTE, Ripple } from "tw-elements";
 
 const HomePage = () => {
   document.title = "ALUMNI Cell NIT Patna | Home";
-  initTE({ Carousel, Ripple });
 
   return (
     <div className="pt-16 bg-black h-1/5">
-      <div
-        id="carouselExampleCaptions"
-        className="relative "
-        data-te-carousel-init
-        data-te-carousel-slide
-      >
+      <div id="carouselExampleCaptions" className="relative ">
         <div className="relative embed-responsive-4by3 w-full  after:clear-both after:block after:content-['']">
           <video className="w-full" autoPlay loop muted>
             <source
@@ -84,7 +75,12 @@ const HomePage = () => {
             type="button"
             className="inline-block rounded bg-sky-950 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]"
           >
-            <a className=" decoration-white" href="https://drive.google.com/file/d/1Z4t3povLq2PqdWXaGeJ2g55ge9PbG_Jy/view?sz=w320">READ MORE</a>
+            <a
+              className=" decoration-white"
+              href="https://drive.google.com/file/d/1Z4t3povLq2PqdWXaGeJ2g55ge9PbG_Jy/view?sz=w320"
+            >
+              READ MORE
+            </a>
           </button>
         </div>
       </div>
