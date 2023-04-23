@@ -30,7 +30,10 @@ const HomePage = () => {
           </video> */}
           <div class="video-container">
             <video autoPlay={true} loop={true} muted={true}>
-              <source src="https://firebasestorage.googleapis.com/v0/b/nitp-alumni-cell.appspot.com/o/videos%2FNITP%20Video.mp4?alt=media&token=29071eb1-2639-4781-8231-59c64b71f319" type="video/mp4" />
+              <source
+                src="https://firebasestorage.googleapis.com/v0/b/nitp-alumni-cell.appspot.com/o/videos%2FNITP%20Video.mp4?alt=media&token=29071eb1-2639-4781-8231-59c64b71f319"
+                type="video/mp4"
+              />
             </video>
           </div>
           <div className="absolute inset-x-[15%] flex flex-col gap-3 items-center justify-center py-20 text-center text-white">
@@ -57,7 +60,8 @@ const HomePage = () => {
               Director of NIT Patna
             </h6>
             <h6 className="mb-4 font-semibold text-primary dark:text-primary-500">
-            Field/ Area of Specialization: Electronics and Communication Engineering
+              Field/ Area of Specialization: Electronics and Communication
+              Engineering
             </h6>
             <h6 className="mb-4 font-semibold text-primary dark:text-primary-500">
               Dean - Alumni and Corporate Relations
